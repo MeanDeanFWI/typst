@@ -39,7 +39,7 @@ Für Handouts, Workshop-Material, kompakte Reader oder Begleitunterlagen.
 Bietet ein Deckblatt-ähnliches Titel-Layout, Inhaltsübersicht (optional) und optionale Bibliographie.
 
 Aufrufbeispiel:
-´´´
+```
 #show: handout.with(
   title: [KI-gestützte Lehrentwicklung],
   intro: [Dieser Reader zeigt einen Workflow zur Entwicklung digitaler Lerneinheiten.],
@@ -49,7 +49,7 @@ Aufrufbeispiel:
   subject: "Digital Teaching",
   lang: "de",
 )
-´´´´
+```
 
 ⸻
 
@@ -61,7 +61,7 @@ Ohne Outline oder Bibliographie, kompakter Kopfbereich mit Kursangabe.
 Logo oben links im Header, keine Boxen oder Rahmen – reiner Fließtext.
 
 Aufrufbeispiel:
-´´´
+```
 #show: tutorial.with(
   sheet_title: [Übungsblatt 3 – Regelbasierte KI],
   course: [KI in der Lehre (WS 25/26)],
@@ -69,7 +69,7 @@ Aufrufbeispiel:
   subject: "KI-Tutorium",
   lang: "de",
 )
-´´´
+```
 
 ⸻
 
@@ -82,7 +82,7 @@ Deckblatt enthält das große THWS-Logo (50 % Breite) zentriert unter dem Titel,
 ab Seite 2 erscheint das kleinere Logo (20 %) oben links im Header.
 
 Aufrufbeispiel:
-´´´
+```
 #show: script.with(
   script_title: [IFRS Financial Instruments],
   subtitle: [Reader for International Accounting],
@@ -97,7 +97,7 @@ Aufrufbeispiel:
   date: [October 2025],
   lang: "en",
 )
-´´´
+```
 
 ⸻
 
