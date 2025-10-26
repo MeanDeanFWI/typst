@@ -91,7 +91,7 @@
   // Grundtypografie
   //----------------------------
   set text(font: "Inter", size: 11pt, lang: lang)
-  set par(leading: 12pt, spacing: 5pt, justify: true)
+  set par(leading: 8pt, spacing: 10pt, justify: true)
 
   set quote(block: true, quotes: true)
   show quote: set text(style: "italic")
@@ -100,7 +100,7 @@
 
   set heading(numbering: "1.1 ")
   show heading: set text(fill: thws_orange, weight: "regular")
-  show heading: set block(sticky: false)
+  show heading: set block(sticky: true)
 
   //----------------------------
   // Tabellen-Design (THWS-Orange)
