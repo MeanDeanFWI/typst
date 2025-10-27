@@ -245,29 +245,23 @@
   //----------------------------
   body
 
-  //----------------------------
-  // LITERATURVERZEICHNIS (optional)
-  //----------------------------
-  if bib-file != none [
-    #pagebreak()
 
-    #let bib_title = if lang == "de" { "Literatur" } else { "References" }
 
-    // Abschnittsüberschrift fürs Literaturverzeichnis:
-    block[
-      #set text(fill: thws_orange, weight: "regular", size: 11pt)
-      #set align(left)
-      *#bib_title*
-    ]
+   // ----------------------------
+// LITERATURVERZEICHNIS (optional)
+// ----------------------------
+if bib-file != none [
+  #pagebreak()
 
-    // Literaturverzeichnis kompakter setzen:
-    #set par(spacing: 3pt, leading: 10pt)
-    #set text(size: 9pt)
+  // Ab hier enger gesetzte Literaturangaben
+  #set par(spacing: 10pt, leading: 5pt)
+  #set text(size: 9pt)
 
-    if citation-style != none {
-      bibliography(bib-file, style: citation-style)
-    } else {
-      bibliography(bib-file)
-    }
-  ]
+  // Bibliographie rendern – mit oder ohne CSL
+  #if citation-style != none {
+    bibliography(bib-file, style: citation-style)
+  } else {
+    bibliography(bib-file)
+  }
+]
 }
